@@ -10,7 +10,7 @@ int powerOf10(int i) {
     }
     return (result);
 }
-
+ 
 void putChar(char c) {
     write(1, & c, 1);
 }
