@@ -1,7 +1,7 @@
 #include <unistd.h>
 
 void putChar(char c) {
-    write(1, & c, 1);
+    write(1, &c, 1);
 }
 
 void putNumbers(int nb) {
@@ -20,6 +20,5 @@ void putNumbers(int nb) {
 
 int main(void) {
     putNumbers(42);
-    
-    return 0;
+    return (0);
 }

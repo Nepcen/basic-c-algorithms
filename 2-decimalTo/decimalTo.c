@@ -1,11 +1,11 @@
 #include <unistd.h>
 
 int strLen(char * str) {
-    int a;
+    int a = 0;
 
-    a = 0;
     while (str[a] != '\0')
         a++;
+
     return (a);
 }
 
@@ -15,6 +15,7 @@ int checkBase(char * str) {
 
     if (! * str || strLen(str) == 1)
         return (0);
+
     i = 0;
     while (str[i] != '\0') {
         j = i + 1;
@@ -25,6 +26,7 @@ int checkBase(char * str) {
         }
         i++;
     }
+    
     return (1);
 }
 
@@ -43,7 +45,7 @@ void decimalTo(int nbr, char * base) {
             decimalTo(l_nbr / base_len, base);
             decimalTo(l_nbr % base_len, base);
         } else
-            write(1, & base[l_nbr], 1);
+            write(1, &base[l_nbr], 1);
     }
 }
 

@@ -8,11 +8,12 @@ int powerOf10(int i) {
         result *= 10;
         j++;
     }
+    
     return (result);
 }
  
 void putChar(char c) {
-    write(1, & c, 1);
+    write(1, &c, 1);
 }
 
 void putNumber(int nb) {
@@ -31,6 +32,7 @@ int checkNumber(int nb) {
         digits[nb % 10] = 1;
         nb /= 10;
     }
+    
     return (1);
 }
 
